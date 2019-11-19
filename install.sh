@@ -36,6 +36,9 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 # Disable Resume system-wide
 defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
+# Disable “natural” (Lion-style) scrolling
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+
 
 # XCode
 # --
