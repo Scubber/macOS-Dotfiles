@@ -39,6 +39,9 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 # Disable “natural” (Lion-style) scrolling
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
+# Restart automatically if the computer freezes
+sudo systemsetup -setrestartfreeze on
+
 
 # XCode
 # --
