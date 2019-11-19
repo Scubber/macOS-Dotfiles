@@ -195,6 +195,3 @@ git config --global user.email sk@samkasman.com
 
 # Symlink the "DSatur8" theme into the Ableton app package
 cp "./configs/ableton/DSatur8.ask" "/Applications/Ableton Live 10 Suite.app/Contents/App-Resources/Themes/"
-
-# Remove default Serum directory to trigger it to prompt for a custom path on launch
-sudo rm -rf "/Library/Audio/Presets/Xfer Records/Serum Presets/"
