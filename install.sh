@@ -42,7 +42,7 @@ sudo systemsetup -setrestartfreeze on
 defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
 # Allow apps from unidentified developers
-spctl --master-disable
+sudo spctl --master-disable
 
 
 # Finder
@@ -83,15 +83,6 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 # Set the icon size of Dock items to 36 pixels
 defaults write com.apple.dock tilesize -int 36
 
-# Finder: restart Finder
-killall Finder
-
-
-# Mail
-# --
-
-# Disable inline attachments (just show the icons)
-defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 
 # Activity Monitor
 # --
@@ -108,6 +99,43 @@ defaults write com.apple.ActivityMonitor ShowCategory -int 0
 # Sort Activity Monitor results by CPU usage
 defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
+
+
+# App Store
+# --
+
+# Enable the automatic update check
+defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
+
+# Check for software updates daily, not just once per week
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+
+# Download newly available updates in background
+defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
+
+# Install System data files & security updates
+defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
+
+
+# Mail
+# --
+
+# Disable inline attachments (just show the icons)
+defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
+
+
+# Restart affected applications
+# --
+
+for app in "Activity Monitor" \
+	"Dock" \
+	"Finder" \
+	"Mail" \
+	"SystemUIServer"; do
+	killall "${app}" &> /dev/null
+done
+
+echo "Done. Note that some of these changes require a logout/restart to take effect."
 
 
 ##
