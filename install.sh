@@ -1,4 +1,4 @@
-# macOS pre-install
+# Let's go!
 # --
 
 # Welcome message
@@ -8,6 +8,10 @@ echo "\\nLet's get your password out of the way.\\n"
 
 # sudo up before we do anything
 sudo -v
+
+
+# macOS
+# --
 
 # Close all System Preferences panes
 osascript -e 'tell application "System Preferences" to quit'
@@ -20,6 +24,14 @@ defaults write com.apple.finder AppleShowAllFiles YES && killall Finder
 
 # Allow macOS apps from unidentified developers
 spctl --master-disable
+
+# Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+
+# Expand print panel by default
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
 
 # XCode
