@@ -1,6 +1,9 @@
 # macOS pre-install
 # --
 
+# Close all System Preferences panes
+osascript -e 'tell application "System Preferences" to quit'
+
 # Enable Dark mode
 osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true'
 
