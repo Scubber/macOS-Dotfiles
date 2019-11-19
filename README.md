@@ -2,6 +2,8 @@
 
 This is my starting point for a fresh install of macOS.
 
+### Installation
+
 - run: `chmod +x install.sh && ./install.sh`
 
 ### What does this do?
