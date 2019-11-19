@@ -1,6 +1,6 @@
 # macOS dotfiles
 
-These files will deploy my macOS workstation configuration.
+These files will deploy my base macOS workstation configuration.
 
 ### Installation
 
