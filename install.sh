@@ -17,7 +17,6 @@ sudo spctl --master-disable
 cd configs/
 
 # Install apps via configs/Brewfile
-brew update
 brew bundle
 brew cleanup
 
