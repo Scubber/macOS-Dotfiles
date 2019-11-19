@@ -1,27 +1,15 @@
+# --
 # Unique to this repo
 # -
 Brewfile.lock.json
 
-
+# --
 # .gitignore boilerplate
-# -
+# --
 
-### Linux ###
-*~
+# macOS
+# --
 
-# temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
-
-# KDE directory preferences
-.directory
-
-# Linux trash folder which might appear on any partition or disk
-.Trash-*
-
-# .nfs files are created when an open file is removed but is still being accessed
-.nfs*
-
-### macOS ###
 # General
 .DS_Store
 .AppleDouble
@@ -49,7 +37,24 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-### Windows ###
+# Linux
+# --
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+# Windows
+# --
 
 # Windows thumbnail cache files
 Thumbs.db
