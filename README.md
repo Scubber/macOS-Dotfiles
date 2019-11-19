@@ -8,6 +8,8 @@ run: `chmod +x install.sh && ./install.sh`
 
 ### What does this do?
 
+- Installs `XCode CLI Tools`
+- Allows macOS apps from unidentified developers
 - Installs `brew`
 - Uses `brew` to install over 50 applications (add more to `configs/Brewfile` as needed)
 - Sets [zsh](http://zsh.sourceforge.net/) as default shell w/ [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) framework and [PowerLevel10k](https://github.com/romkatv/powerlevel10k) theme.
