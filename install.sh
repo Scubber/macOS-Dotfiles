@@ -20,25 +20,26 @@ sudo spctl --master-disable
 # Install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# cd to configs/
-cd configs/
+# cd to configs/brew/
+cd configs/brew/
 
 # Install apps via configs/Brewfile
 brew bundle
 brew cleanup
 
-
 # cd back to project root
-cd ../
+cd ../../
+
 
 # Ableton
 # --
 
-# Symlink theme "DSatur8" into app package
+# Symlink the "DSatur8" theme into the Ableton app package
 cp "./configs/ableton/DSatur8.ask" "/Applications/Ableton Live 10 Suite.app/Contents/App-Resources/Themes/"
 
-# Remove default Serum directory - point it to cloud sync folder when prompted in Ableton
+# Remove default Serum directory to trigger it to prompt for a custom path on launch
 sudo rm -rf "/Library/Audio/Presets/Xfer Records/Serum Presets/"
+
 
 # zsh
 # --
