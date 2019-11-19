@@ -1,6 +1,14 @@
 # macOS pre-install
 # --
 
+# Welcome message
+echo "\\nGreetings, traveler!"
+echo "\\nWelcome to @samkasman's base macOS workstation configuration."
+echo "\\nLet's get your password out of the way.\\n"
+
+# sudo up before we do anything
+sudo -v
+
 # Close all System Preferences panes
 osascript -e 'tell application "System Preferences" to quit'
 
@@ -11,7 +19,7 @@ osascript -e 'tell app "System Events" to tell appearance preferences to set dar
 defaults write com.apple.finder AppleShowAllFiles YES && killall Finder
 
 # Allow macOS apps from unidentified developers
-sudo spctl --master-disable
+spctl --master-disable
 
 
 # XCode
