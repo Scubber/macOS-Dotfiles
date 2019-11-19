@@ -7,17 +7,18 @@ osascript -e 'tell application "System Preferences" to quit'
 # Enable Dark mode
 osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true'
 
-# Show hidden files/folders
-defaults write com.apple.finder AppleShowAllFiles YES
-
-# relaunch Finder
-killall Finder
-
-# Install Xcode CLI tools
-xcode-select —-install
+# Show hidden files/folders + restart Finder
+defaults write com.apple.finder AppleShowAllFiles YES && killall Finder
 
 # Allow macOS apps from unidentified developers
 sudo spctl --master-disable
+
+
+# XCode
+# --
+
+# Install CLI tools
+xcode-select —-install
 
 
 # Homebrew
@@ -39,24 +40,6 @@ cd configs/brew/ && brew bundle && cd ../../
 brew cleanup
 
 
-# Ableton Live
-# --
-
-# Symlink the "DSatur8" theme into the Ableton app package
-cp "./configs/ableton/DSatur8.ask" "/Applications/Ableton Live 10 Suite.app/Contents/App-Resources/Themes/"
-
-# Remove default Serum directory to trigger it to prompt for a custom path on launch
-sudo rm -rf "/Library/Audio/Presets/Xfer Records/Serum Presets/"
-
-
-# git
-# --
-
-# set git username and email address
-git config --global user.name "Sam Kasman"
-git config --global user.email sk@samkasman.com
-
-
 # zsh
 # --
 
@@ -68,6 +51,24 @@ git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/power
 
 # Change default shell to zsh
 chsh -s /usr/local/bin/zsh
+
+
+# git
+# --
+
+# set git username and email address
+git config --global user.name "Sam Kasman"
+git config --global user.email sk@samkasman.com
+
+
+# Ableton Live
+# --
+
+# Symlink the "DSatur8" theme into the Ableton app package
+cp "./configs/ableton/DSatur8.ask" "/Applications/Ableton Live 10 Suite.app/Contents/App-Resources/Themes/"
+
+# Remove default Serum directory to trigger it to prompt for a custom path on launch
+sudo rm -rf "/Library/Audio/Presets/Xfer Records/Serum Presets/"
 
 
 # macOS post-install
