@@ -1,6 +1,6 @@
 # macOS dotfiles
 
-This is my starting point for a fresh install of macOS.
+These files will deploy my macOS workstation configuration.
 
 ### Installation
 
