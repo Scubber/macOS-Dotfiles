@@ -9,7 +9,7 @@ run: `chmod +x install.sh && ./install.sh`
 ### What does it do?
 
 - Enables dark mode
-- Shows hidden files/folders, restarts Finder
+- Enables hidden files/folders
 - Installs XCode CLI tools
 - Allows macOS apps from unidentified developers
 - Installs Homebrew package manager
