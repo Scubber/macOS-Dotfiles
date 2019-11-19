@@ -177,7 +177,7 @@ git clone http://github.com/robbyrussell/oh-my-zsh ~/.oh-my-zsh
 git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
 
 # Change default shell to zsh
-chsh -s /usr/local/bin/zsh
+sudo chsh -s /usr/local/bin/zsh
 
 
 ##
