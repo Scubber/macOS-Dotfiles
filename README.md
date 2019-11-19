@@ -12,7 +12,7 @@ run: `chmod +x install.sh && ./install.sh`
 - Enables hidden files/folders
 - Installs XCode CLI tools
 - Allows macOS apps from unidentified developers
-- Installs Homebrew package manager
+- Installs [Homebrew](https://brew.sh/) package manager
 - Uses `brew` to install my preferred apps via `configs/brew/Brewfile`
 - Installs my preferred Ableton Live theme and deletes the default Serum presets folder
 - Sets my `git` username and email address
