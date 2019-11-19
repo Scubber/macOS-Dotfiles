@@ -1,3 +1,6 @@
+# macOS pre-install
+# --
+
 # Show hidden files/folders
 defaults write com.apple.finder AppleShowAllFiles YES
 
@@ -10,6 +13,10 @@ xcode-select —-install
 # Allow macOS apps from unidentified developers
 sudo spctl --master-disable
 
+
+# Homebrew
+# --
+
 # Install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -20,6 +27,20 @@ cd configs/
 brew bundle
 brew cleanup
 
+
+# cd back to project root
+cd ../
+
+# Ableton
+# --
+
+# symlink theme "DSatur8" into app package
+cp "./configs/ableton/DSatur8.ask" "/Applications/Ableton Live 10 Suite.app/Contents/App-Resources/Themes/"
+
+
+# zsh
+# --
+
 # Clone Oh-My-Zsh zsh framework
 git clone http://github.com/robbyrussell/oh-my-zsh ~/.oh-my-zsh
 
@@ -28,6 +49,10 @@ git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/power
 
 # Change default shell to zsh
 chsh -s /usr/local/bin/zsh
+
+
+# macOS post-install
+# --
 
 # Block macOS apps from unidentified developers
 # sudo spctl --master-enable
