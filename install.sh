@@ -1,6 +1,9 @@
 # macOS pre-install
 # --
 
+# Enable Dark mode
+osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true'
+
 # Show hidden files/folders
 defaults write com.apple.finder AppleShowAllFiles YES
 
