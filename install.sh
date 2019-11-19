@@ -10,7 +10,7 @@ sudo spctl --master-disable
 # cd to configs/
 cd configs/
 
-# Install apps via brew
+# Install apps via configs/Brewfile
 brew update
 brew bundle
 brew cleanup
