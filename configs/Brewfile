@@ -1,4 +1,4 @@
-# Homebrew stuff
+# Homebrew Stuff
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
@@ -10,6 +10,7 @@ brew "ffmpeg"
 brew "figlet"
 brew "git"
 brew "handbrake"
+brew "neofetch"
 brew "node"
 brew "nvm"
 brew "php"
