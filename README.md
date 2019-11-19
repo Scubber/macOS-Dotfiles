@@ -8,8 +8,8 @@ run: `chmod +x install.sh && ./install.sh`
 
 ### What does it do?
 
-- Show hidden files/folders, restart Finder
-- Installs XCode cli tools
+- Shows hidden files/folders, restarts Finder
+- Installs XCode CLI tools
 - Allows macOS apps from unidentified developers
 - Installs Homebrew macOS package manager
 - Uses `brew` to install my preferred apps via `configs/Brewfile`
@@ -18,4 +18,4 @@ run: `chmod +x install.sh && ./install.sh`
 
 ### To Do
 
-- Alias shell profiles into default locations
+- Install script: copy shell config files into proper locations
