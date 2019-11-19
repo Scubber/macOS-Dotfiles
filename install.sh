@@ -34,9 +34,11 @@ cd ../
 # Ableton
 # --
 
-# symlink theme "DSatur8" into app package
+# Symlink theme "DSatur8" into app package
 cp "./configs/ableton/DSatur8.ask" "/Applications/Ableton Live 10 Suite.app/Contents/App-Resources/Themes/"
 
+# Remove default Serum directory - point it to cloud sync folder when prompted in Ableton
+sudo rm -rf "/Library/Audio/Presets/Xfer Records/Serum Presets/"
 
 # zsh
 # --
