@@ -1,3 +1,9 @@
+# Show hidden files/folders
+defaults write com.apple.finder AppleShowAllFiles YES
+
+# relaunch Finder
+killall Finder
+
 # Install Xcode CLI tools
 xcode-select —-install
 
