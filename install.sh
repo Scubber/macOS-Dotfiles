@@ -23,15 +23,17 @@ sudo spctl --master-disable
 # Install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# cd to configs/brew/
-cd configs/brew/
+# Make sure we're on the most recent version
+brew update
+
+# Upgrade any existing formulae
+brew upgrade
 
 # Install apps via configs/Brewfile
-brew bundle
-brew cleanup
+cd configs/brew/ && brew bundle && cd ../../
 
-# cd back to project root
-cd ../../
+# Remove old versions from the cellar
+brew cleanup
 
 
 # Ableton Live
