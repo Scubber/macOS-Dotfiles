@@ -32,7 +32,7 @@ run: `chmod +x install.sh && ./install.sh`
 - Backup/replace existing shell profiles
 - Option to setup a static IP
 - Option to run specific or all scripts
-- Option to select fresh or existing macOS install, if existing, don't do some stuff
+- Option to select if OS is fresh (do everything) or old (don't do everything)
 - Prompt for git username/email instead of assuming
 - Automate iTerm2 theme as described in [here](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
 - Add Ubersicht widgets
