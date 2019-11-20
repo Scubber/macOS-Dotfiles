@@ -18,5 +18,5 @@ run: `chmod +x install.sh && ./install.sh`
 
 ### To Do
 
-- Backup existing `.bash_profile` and `.zshrc`, then replace both with this version.
+- Backup/replace shell profiles as part of install script
 - Automate iTerm2 theme as described in [here](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
