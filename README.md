@@ -1,5 +1,13 @@
 # My macOS Dotfiles
 
+**What are Dotfiles?**
+
+In computing, dotfiles are files or directories that begin with a period --`.`
+
+Filesystem utilities do not display these by default when showing a directory listing. They are commonly used for storing user preferences or preserving the state of a utility
+
+### How does this work?
+
 The `install.sh` script will deploy my base macOS workstation configuration including important OS and application settings and resources.
 
 **Warning**: You're probably best off using this as inspiration for your own setup. Run at your own risk.
