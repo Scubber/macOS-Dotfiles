@@ -20,7 +20,7 @@ run: `chmod +x install.sh && ./install.sh`
 
 - macOS `System Preferences` settings
 - macOS app settings
-- Installs XCode CLI tools
+- Installs `xcode cli tools`
 - Installs [Homebrew](https://brew.sh/) package manager
 - Uses `brew` to install my preferred apps via `configs/brew/Brewfile`
 - Installs my preferred [Ableton Live](https://www.ableton.com/en/live/) theme
