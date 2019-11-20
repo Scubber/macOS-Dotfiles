@@ -34,6 +34,7 @@ run: `chmod +x install.sh && ./install.sh`
 - Option to run specific or all scripts
 - Option to select if OS is fresh (do everything) or old (don't do everything)
 - Prompt for git username/email instead of assuming
+- Generate `ssh` key in default location
 - Automate iTerm2 theme as described in [here](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
 - Ubersicht - add custom widgets
 - VSCode - Install `Settings Sync` extension, enable `code` command
