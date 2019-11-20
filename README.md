@@ -1,8 +1,8 @@
-# macOS dotfiles
+# My macOS Dotfiles
 
 The `install.sh` script will deploy my base macOS workstation configuration including important OS and application settings and resources.
 
-**Note**: Run at your own risk. You're probably best off using this as inspiration for your own setup.
+**Warning**: You're probably best off using this as inspiration for your own setup. Run at your own risk.
 
 ### Installation
 
