@@ -22,7 +22,7 @@ run: `chmod +x install.sh && ./install.sh`
 - macOS app settings
 - Installs `xcode cli tools`
 - Installs [Homebrew](https://brew.sh/) package manager
-- Uses `brew` to install my preferred apps via [`configs/brew/Brewfile`](https://github.com/samkasman/macOS-Dotfiles/blob/master/configs/brew/Brewfile)
+- Uses `brew` to install my [preferred apps](https://github.com/samkasman/macOS-Dotfiles/blob/master/configs/brew/Brewfile) via `configs/brew/Brewfile`
 - Sets [zsh](http://zsh.sourceforge.net/) as default shell w/ [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) framework and [PowerLevel10k](https://github.com/romkatv/powerlevel10k) theme.
 - Sets my `git` username and email address
 - Installs my preferred [Ableton Live](https://www.ableton.com/en/live/) theme
