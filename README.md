@@ -36,5 +36,5 @@ run: `chmod +x install.sh && ./install.sh`
 ### Credit
 
 Lots of ideas borrowed from these folks:
-- https://github.com/explorador
-- https://github.com/mathiasbynens
+- [Cristian Guerra](https://github.com/explorador)
+- [Mathias Bynens](https://github.com/mathiasbynens)
