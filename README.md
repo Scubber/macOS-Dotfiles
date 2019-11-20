@@ -30,7 +30,6 @@ To deploy, run: `chmod +x install.sh && ./install.sh`
 - Prompt to set hostname
 - Prompt to replace default `~/.bash_profile` and `~/.zshrc` files
 - Prompt to setup a static IP
-- Prompt to run all or specific scripts
 - Prompt for git username/email instead of assuming
 - Prompt to generate an `ssh` key in default location
 - Prompt to mount NAS via IP address, always mount on boot
