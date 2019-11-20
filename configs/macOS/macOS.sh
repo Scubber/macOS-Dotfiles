@@ -215,13 +215,13 @@ for app in "Activity Monitor" \
 done
 
 
-# XCode
+# Xcode
 # --
 
 if xcode-select --install 2>&1 | grep installed; then
-	# XCode CLI tools are installed
+	# Xcode CLI tools are installed
 	echo "Moving on."
 else
-  	# XCode CLI tools are not installed, do it!
+  	# Xcode CLI tools are not installed, do it!
 	xcode-select —-install
 fi
