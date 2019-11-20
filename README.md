@@ -35,10 +35,12 @@ To deploy, run: `chmod +x install.sh && ./install.sh`
 - Prompt for git username/email instead of assuming
 - Generate `ssh` key in default location
 - Automate iTerm2 theme as described in [here](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
+- Add App Store apps via `mas-cli`
 - Ubersicht - add custom widgets
 - VSCode - Install `Settings Sync` extension, enable `code` command
 - Sublime Text - Install `Package Manager`, theme and settings
-- Add App Store apps via `mas-cli`
+- Ableton - Add expected `~/Audio` directories for samples/virtual instruments
+
 
 ### Credit
 
