@@ -164,6 +164,20 @@ defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
 # Disable inline attachments (just show the icons)
 defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 
+# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
+defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
+
+# Terminal
+# --
+
+# Enable Secure Keyboard Entry in Terminal.app
+# See: https://security.stackexchange.com/a/47786/8918
+defaults write com.apple.terminal SecureKeyboardEntry -bool true
+
+# Install the Dracula theme for iTerm2
+open "../iterm2/Dracula.itermcolors"
+
 
 # Restart affected applications
 # --
