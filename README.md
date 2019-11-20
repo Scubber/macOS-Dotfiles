@@ -8,7 +8,7 @@ Filesystem utilities do not display these by default when showing a directory li
 
 ### How does this work?
 
-The `install.sh` script will deploy my base macOS workstation configuration including important OS and application settings and resources. This is used to automate both the process of setting up and easily maintaining one or more workstations.
+The `install.sh` script will deploy my base macOS workstation configuration including important OS and application settings and resources. This is used to automate both the process of setting up and maintaining one or more workstations.
 
 **Warning**: You're probably best off using this as _inspiration_ for your own setup. Run at your own risk.
 
@@ -33,7 +33,9 @@ run: `chmod +x install.sh && ./install.sh`
 - Option to setup a static IP
 - Option to run specific or all scripts
 - Option to select fresh or existing macOS install, if existing, don't do some stuff
+- Prompt for git username/email instead of assuming
 - Automate iTerm2 theme as described in [here](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
+- Add Ubersicht widgets
 
 ### Credit
 
