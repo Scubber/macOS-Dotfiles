@@ -8,7 +8,7 @@ Filesystem utilities do not display these by default when showing a directory li
 
 ### How does this work?
 
-The `install.sh` script will deploy my base macOS workstation configuration including important OS and application settings and resources.
+The `install.sh` script will deploy my base macOS workstation configuration including important OS and application settings and resources. This is used to automate both the process of setting up and easily maintaining more than one workstation.
 
 **Warning**: You're probably best off using this as inspiration for your own setup. Run at your own risk.
 
