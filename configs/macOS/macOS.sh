@@ -67,12 +67,12 @@ defaults write com.apple.dock autohide-time-modifier -float 0
 defaults write com.apple.dock autohide -bool true
 
 # Remove default Dock junk
-# defaults delete com.apple.dock persistent-apps;
-# defaults delete com.apple.dock persistent-others;
-# defaults delete com.apple.dock recent-apps;
+defaults delete com.apple.dock persistent-apps;
+defaults delete com.apple.dock persistent-others;
+defaults delete com.apple.dock recent-apps;
 
-# Don’t show recent applications in Dock
-defaults write com.apple.dock show-recents -bool false
+# Show only open applications in the Dock
+defaults write com.apple.dock static-only -bool true
 
 
 # Finder
@@ -166,6 +166,13 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
+
+# Sublime Text
+# --
+
+# Install Sublime Text settings
+# cp -r configs/sublime-text/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
 
 
 # Terminal
