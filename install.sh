@@ -17,6 +17,9 @@ echo "--"
 echo ""
 printf "\e[0m"
 
+# Main stuff
+# --
+
 # sudo up before we do anything
 sudo -v
 

@@ -4,7 +4,6 @@
 
 # Init Message
 # --
-
 echo ""
 printf "\e[96m"
 echo "--"
@@ -14,6 +13,9 @@ echo ""
 echo "--"
 echo ""
 printf "\e[0m"
+
+# Git Settings
+# --
 
 # set git username and email address
 git config --global user.name "Sam Kasman"
