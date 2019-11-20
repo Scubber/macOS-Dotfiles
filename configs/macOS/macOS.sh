@@ -178,6 +178,9 @@ defaults write com.apple.terminal SecureKeyboardEntry -bool true
 # Install the Dracula theme for iTerm2
 open "../iterm2/Dracula.itermcolors"
 
+# Don’t display the annoying prompt when quitting iTerm2
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
 
 # Restart affected applications
 # --
