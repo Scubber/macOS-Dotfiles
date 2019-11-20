@@ -33,17 +33,24 @@ To deploy, run: `chmod +x install.sh && ./install.sh`
 - Prompt to run all or specific scripts
 - Prompt for git username/email instead of assuming
 - Prompt to generate an `ssh` key in default location
+- Prompt to mount NAS via IP address, always mount on boot
 - Automate iTerm2 theme like [this](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
 - Add App Store apps via `mas-cli`
 - Ubersicht - add custom widgets
-- VSCode - Install `Settings Sync` extension, enable `code` command
-- Sublime Text - Install `Package Manager`, theme and settings
-- Ableton - Create expected `~/Audio` directories for samples/virtual instruments
+- VSCode:
+	- install `Settings Sync` extension
+	- enable `code` command
+- Sublime Text
+	- install `Package Manager`
+	- install theme and settings
+	- install `subl` command
+- Ableton - Create expected directories:
+	- `~/Audio/Audio Samples`
+	- `~/Audio/Virtual Instruments`
 - macOS - Create expected directories:
 	- `~/Code`
 	- `~/Streaming`
 	- `~/VirtualBox VMs`
-
 
 ### Credit
 
