@@ -1,9 +1,9 @@
-# Homebrew Stuff
+# homebrew stuff
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 
-# CLI Tools
+# cli tools
 brew "composer"
 brew "docker"
 brew "ffmpeg"
@@ -20,7 +20,7 @@ brew "youtube-dl"
 brew "zsh"
 brew "zsh-completions"
 
-# Graphical Applications
+# gui apps
 cask "1password"
 cask "ableton-live-suite"
 cask "alfred"
