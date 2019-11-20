@@ -36,6 +36,7 @@ run: `chmod +x install.sh && ./install.sh`
 - Prompt for git username/email instead of assuming
 - Automate iTerm2 theme as described in [here](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
 - Add Ubersicht widgets
+- VSCode + Sublime Text settings, themes
 
 ### Credit
 
