@@ -1,6 +1,6 @@
 # My macOS Dotfiles
 
-### What are Dotfiles?**
+### What are Dotfiles?
 
 In computing, dotfiles are files or directories that begin with a `.`
 
