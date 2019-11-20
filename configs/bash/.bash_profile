@@ -102,6 +102,14 @@ cd() { builtin cd "$@"; ls; }
 # mcd - mkdir and cd into it
 mcd () { mkdir -p "$1" && cd "$1"; }
 
+# Change working directory to the top-most Finder window location
+cdf() {
+	cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')";
+}
+
+# credit to good buddy cristian for the following metrix and watch functions
+# Cristian Guerra - https://github.com/explorador
+
 # google lighthouse (requires chrome)
 # --
 # scan desktop site - run: "metrix <url>"
@@ -132,9 +140,6 @@ watch() {
         browser-sync start --proxy $1 --directory --files "**/*.js, **/*.php, **/*.html, **/*.css"
     fi
 }
-
-# credit to good buddy cristian for the metrix and watch functions
-# https://github.com/explorador
 
 #
 # rice

@@ -39,23 +39,50 @@ sudo spctl --master-disable
 # Dock
 # --
 
-# wallpaper - copy from repo to folder
-cp ./wallpaper.jpg ~/Pictures/wallpaper.jpg
-
-# wallpaper - set it
-osascript -e 'tell application "Finder" to set desktop picture to POSIX file "~/Pictures/wallpaper.jpg"'
-
 # Set the icon size of Dock items to 45 pixels
 defaults write com.apple.dock tilesize -int 45
 
+# Change minimize/maximize window effect
+defaults write com.apple.dock mineffect -string "scale"
+
+# Minimize windows into their application’s icon
+defaults write com.apple.dock minimize-to-application -bool true
+
+# Enable spring loading for all Dock items
+defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
+
+# Show indicator lights for open applications in the Dock
+defaults write com.apple.dock show-process-indicators -bool true
+
+# Don’t animate opening applications from the Dock
+defaults write com.apple.dock launchanim -bool false
+
+# Remove the auto-hiding Dock delay
+defaults write com.apple.dock autohide-delay -float 0
+
+# Remove the animation when hiding/showing the Dock
+defaults write com.apple.dock autohide-time-modifier -float 0
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
 # Remove default Dock junk
-defaults delete com.apple.dock persistent-apps;
-defaults delete com.apple.dock persistent-others;
-defaults delete com.apple.dock recent-apps;
+# defaults delete com.apple.dock persistent-apps;
+# defaults delete com.apple.dock persistent-others;
+# defaults delete com.apple.dock recent-apps;
+
+# Don’t show recent applications in Dock
+defaults write com.apple.dock show-recents -bool false
 
 
 # Finder
 # --
+
+# wallpaper - copy from repo to ~/Pictures
+cp ./wallpaper.jpg ~/Pictures/wallpaper.jpg
+
+# wallpaper - set it
+osascript -e 'tell application "Finder" to set desktop picture to POSIX file "~/Pictures/wallpaper.jpg"'
 
 # Show icons for hard drives, servers, and removable media on the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true

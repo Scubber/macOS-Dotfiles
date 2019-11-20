@@ -30,8 +30,9 @@ run: `chmod +x install.sh && ./install.sh`
 ### To Do
 
 - Backup/replace existing shell profiles
-- Automate iTerm2 theme as described in [here](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
+- Option to setup a static IP
 - Interactive selection of specific or all scripts
+- Automate iTerm2 theme as described in [here](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
 
 ### Credit
 
