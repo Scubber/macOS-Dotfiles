@@ -29,6 +29,7 @@ run: `chmod +x install.sh && ./install.sh`
 
 ### To Do
 
+- Prompt to set hostname
 - Backup/replace existing shell profiles
 - Option to setup a static IP
 - Option to run specific or all scripts
@@ -39,6 +40,7 @@ run: `chmod +x install.sh && ./install.sh`
 - Ubersicht - add custom widgets
 - VSCode - Install `Settings Sync` extension, enable `code` command
 - Sublime Text - Install `Package Manager`, theme and settings
+- Add App Store apps via `mas-cli`
 
 ### Credit
 
