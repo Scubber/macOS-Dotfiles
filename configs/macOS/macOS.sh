@@ -171,8 +171,14 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 # Sublime Text
 # --
 
+# Install package manager
+
+# Install Seti_UI theme
+
 # Install Sublime Text settings
 # cp -r configs/sublime-text/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
+
+# Enable 'subl' command
 
 
 # Terminal
@@ -187,6 +193,14 @@ open "../iterm2/Dracula.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm2
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+
+# VSCode
+# --
+
+# Install Settings Sync extension to pull everything from https://gist.github.com
+
+# Enable 'code' command
 
 
 # Restart affected applications
