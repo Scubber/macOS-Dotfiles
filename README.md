@@ -1,10 +1,10 @@
 # My macOS Dotfiles
 
-### What are Dotfiles?
+### What are dotfiles?
 
 In computing, dotfiles are files or directories that begin with a `.`
 
-Filesystem utilities do not display these by default when showing a directory listing. They are commonly used for storing user preferences or preserving the state of a utility
+Filesystem utilities do not display these by default when showing a directory listing. They are commonly used for storing user preferences or preserving the state of a utility.
 
 ### How does this work?
 
@@ -18,7 +18,8 @@ run: `chmod +x install.sh && ./install.sh`
 
 ### What does it do?
 
-- Various macOS settings
+- macOS `System Preferences` settings
+- macOS app settings
 - Installs XCode CLI tools
 - Installs [Homebrew](https://brew.sh/) package manager
 - Uses `brew` to install my preferred apps via `configs/brew/Brewfile`
