@@ -10,7 +10,9 @@ Filesystem utilities do not display these by default when showing a directory li
 
 **Warning**: You're probably best off using this as **✧･ﾟ:_inspiration_:･ﾟ✧** for your own setup. Run at your own risk.
 
-run: `chmod +x install.sh && ./install.sh`
+The `install.sh` script will deploy my base macOS workstation configuration including important OS and application settings and resources. This is used to automate both the process of setting up and maintaining one or more workstations.
+
+To deploy, run: `chmod +x install.sh && ./install.sh`
 
 ### What does it do?
 
@@ -22,10 +24,6 @@ run: `chmod +x install.sh && ./install.sh`
 - Sets [zsh](http://zsh.sourceforge.net/) as default shell w/ [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) framework and [PowerLevel10k](https://github.com/romkatv/powerlevel10k) theme.
 - Sets my `git` username and email address
 - Installs my preferred [Ableton Live](https://www.ableton.com/en/live/) theme
-
-### How does this work?
-
-The `install.sh` script will deploy my base macOS workstation configuration including important OS and application settings and resources. This is used to automate both the process of setting up and maintaining one or more workstations.
 
 ### To Do
 
