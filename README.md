@@ -28,18 +28,21 @@ To deploy, run: `chmod +x install.sh && ./install.sh`
 ### To Do
 
 - Prompt to set hostname
-- Backup/replace existing shell profiles
-- Option to setup a static IP
-- Option to run specific or all scripts
-- Option to select if OS is fresh (do everything) or old (don't do everything)
+- Prompt to replace default `~/.bash_profile` and `~/.zshrc` files
+- Prompt to setup a static IP
+- Prompt to run all or specific scripts
 - Prompt for git username/email instead of assuming
-- Generate `ssh` key in default location
-- Automate iTerm2 theme as described in [here](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
+- Prompt to generate an `ssh` key in default location
+- Automate iTerm2 theme like [this](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
 - Add App Store apps via `mas-cli`
 - Ubersicht - add custom widgets
 - VSCode - Install `Settings Sync` extension, enable `code` command
 - Sublime Text - Install `Package Manager`, theme and settings
-- Ableton - Add expected `~/Audio` directories for samples/virtual instruments
+- Ableton - Create expected `~/Audio` directories for samples/virtual instruments
+- macOS - Create expected directories:
+	- `~/Code`
+	- `~/Streaming`
+	- `~/VirtualBox VMs`
 
 
 ### Credit
