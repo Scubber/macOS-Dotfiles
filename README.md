@@ -2,6 +2,8 @@
 
 The `install.sh` script will deploy my base macOS workstation configuration including important OS and application settings and resources.
 
+*Note*: Run at your own risk. You're probably best off using this as inspiration for your own setup.
+
 ### Installation
 
 run: `chmod +x install.sh && ./install.sh`
