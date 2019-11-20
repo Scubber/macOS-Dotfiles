@@ -218,5 +218,10 @@ done
 # XCode
 # --
 
-# Install CLI tools
-xcode-select —-install
+if xcode-select --install 2>&1 | grep installed; then
+	# XCode CLI tools are installed
+	echo "Moving on."
+else
+  	# XCode CLI tools are not installed, do it!
+	xcode-select —-install
+fi
