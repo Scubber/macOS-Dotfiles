@@ -23,23 +23,6 @@ osascript -e 'tell application "System Preferences" to quit'
 # dark mode
 osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true'
 
-# wallpapers - if dir doesn't exist, make it
-mkdir -p ~/Pictures/Wallpapers
-
-# wallpaper - copy from repo to folder
-cp ./forest_trees_nature_landscape_tree_autumn_5120x2880.jpg ~/Pictures/Wallpapers/bg.jpg
-
-# wallpaper - set it
-osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/Users/sam/Pictures/Wallpapers/bg.jpg"'
-
-# Expand save panel by default
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
-
-# Expand print panel by default
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
-
 # Disable “natural” scrolling
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
@@ -51,6 +34,24 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
 # Allow apps from unidentified developers
 sudo spctl --master-disable
+
+
+# Dock
+# --
+
+# wallpaper - copy from repo to folder
+cp ./wallpaper.jpg ~/Pictures/wallpaper.jpg
+
+# wallpaper - set it
+osascript -e 'tell application "Finder" to set desktop picture to POSIX file "~/Pictures/wallpaper.jpg"'
+
+# Set the icon size of Dock items to 45 pixels
+defaults write com.apple.dock tilesize -int 45
+
+# Remove default Dock junk
+defaults delete com.apple.dock persistent-apps;
+defaults delete com.apple.dock persistent-others;
+defaults delete com.apple.dock recent-apps;
 
 
 # Finder
@@ -88,8 +89,13 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 # Enable AirDrop over Ethernet
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
-# Set the icon size of Dock items to 45 pixels
-defaults write com.apple.dock tilesize -int 45
+# Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+
+# Expand print panel by default
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
 
 # Activity Monitor
