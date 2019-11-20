@@ -23,9 +23,9 @@ run: `chmod +x install.sh && ./install.sh`
 - Installs `xcode cli tools`
 - Installs [Homebrew](https://brew.sh/) package manager
 - Uses `brew` to install my preferred apps via `configs/brew/Brewfile`
-- Installs my preferred [Ableton Live](https://www.ableton.com/en/live/) theme
-- Sets my `git` username and email address
 - Sets [zsh](http://zsh.sourceforge.net/) as default shell w/ [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) framework and [PowerLevel10k](https://github.com/romkatv/powerlevel10k) theme.
+- Sets my `git` username and email address
+- Installs my preferred [Ableton Live](https://www.ableton.com/en/live/) theme
 
 ### To Do
 
@@ -36,6 +36,6 @@ run: `chmod +x install.sh && ./install.sh`
 
 ### Credit
 
-Lots of ideas borroed from these folks:
+Lots of ideas borrowed from these folks:
 - https://github.com/explorador
 - https://github.com/mathiasbynens
