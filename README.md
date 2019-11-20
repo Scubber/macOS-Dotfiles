@@ -18,4 +18,4 @@ run: `chmod +x install.sh && ./install.sh`
 
 ### To Do
 
-- Install script: copy shell config files into proper locations
+- Backup existing `.bash_profile` and `.zshrc`, then replace both with this version.
