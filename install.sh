@@ -33,6 +33,8 @@ chmod -R +x ./configs
 ./configs/git/git.sh
 ./configs/ableton/ableton.sh
 
+# backup/replace shell scripts
+
 # Success message
 # --
 echo ""

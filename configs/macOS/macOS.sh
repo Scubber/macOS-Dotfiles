@@ -17,11 +17,20 @@ printf "\e[0m"
 # System Preferences
 # --
 
-# Close all System Preferences panes
+# kill an open system preferences window
 osascript -e 'tell application "System Preferences" to quit'
 
-# Enable Dark mode
+# dark mode
 osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true'
+
+# wallpapers - if dir doesn't exist, make it
+mkdir -p ~/Pictures/Wallpapers
+
+# wallpaper - copy from repo to folder
+cp ./forest_trees_nature_landscape_tree_autumn_5120x2880.jpg ~/Pictures/Wallpapers/bg.jpg
+
+# wallpaper - set it
+osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/Users/sam/Pictures/Wallpapers/bg.jpg"'
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -79,8 +88,8 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 # Enable AirDrop over Ethernet
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
-# Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 36
+# Set the icon size of Dock items to 45 pixels
+defaults write com.apple.dock tilesize -int 45
 
 
 # Activity Monitor
