@@ -10,7 +10,7 @@ Filesystem utilities do not display these by default when showing a directory li
 
 The `install.sh` script will deploy my base macOS workstation configuration including important OS and application settings and resources. This is used to automate both the process of setting up and maintaining one or more workstations.
 
-**Warning**: You're probably best off using this as ✧･ﾟ:✧･ﾟ:_inspiration_:･ﾟ✧:･ﾟ✧ for your own setup. Run at your own risk.
+**Warning**: You're probably best off using this as *✧･ﾟ:✧･ﾟ:_inspiration_:･ﾟ✧:･ﾟ✧* for your own setup. Run at your own risk.
 
 ### Installation
 
