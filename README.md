@@ -33,3 +33,9 @@ run: `chmod +x install.sh && ./install.sh`
 - Automate iTerm2 theme as described in [here](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
 - Add wallpapers
 - Interactive selection of specific or all scripts
+
+### Credit
+
+Lots of ideas borroed from these folks:
+- https://github.com/explorador
+- https://github.com/mathiasbynens

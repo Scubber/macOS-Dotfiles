@@ -102,9 +102,6 @@ cd() { builtin cd "$@"; ls; }
 # mcd - mkdir and cd into it
 mcd () { mkdir -p "$1" && cd "$1"; }
 
-# credit to good buddy cristian for a lot of help and inspiration:
-# https://github.com/explorador
-
 # google lighthouse (requires chrome)
 # --
 # scan desktop site - run: "metrix <url>"
@@ -136,6 +133,8 @@ watch() {
     fi
 }
 
+# credit to good buddy cristian for the metrix and watch functions
+# https://github.com/explorador
 
 #
 # rice
