@@ -32,3 +32,4 @@ run: `chmod +x install.sh && ./install.sh`
 - Backup/replace existing shell profiles
 - Automate iTerm2 theme as described in [here](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
 - Add wallpapers
+- Interactive selection of specific or all scripts
