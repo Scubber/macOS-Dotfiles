@@ -1,8 +1,8 @@
 # My macOS Dotfiles
 
-**What are Dotfiles?**
+### What are Dotfiles?**
 
-In computing, dotfiles are files or directories that begin with a period --`.`
+In computing, dotfiles are files or directories that begin with a `.`
 
 Filesystem utilities do not display these by default when showing a directory listing. They are commonly used for storing user preferences or preserving the state of a utility
 
