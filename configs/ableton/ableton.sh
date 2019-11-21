@@ -18,7 +18,7 @@ printf "\e[0m"
 # --
 cp "./configs/ableton/DSatur8.ask" "/Applications/Ableton Live 10 Suite.app/Contents/App-Resources/Themes/"
 
-# Add expected directory structure
+# Add expected directory structure if it doesn't exist
 # --
-# "~/Audio/Audio Samples"
-# "~/Audio/Virtual Instruments"
+mkdir -p ~/Audio/Audio\ Samples
+mkdir -p ~/Audio/Virtual\ Instruments

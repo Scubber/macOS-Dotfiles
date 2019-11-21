@@ -43,9 +43,6 @@ To deploy, run: `chmod +x install.sh && ./install.sh`
 	- install `Package Manager`
 	- install theme and settings
 	- install `subl` command
-- Ableton - Create expected directories:
-	- `~/Audio/Audio Samples`
-	- `~/Audio/Virtual Instruments`
 - macOS - Create expected directories:
 	- `~/Code`
 	- `~/Streaming`
