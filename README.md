@@ -30,7 +30,7 @@ Provides prompts and menus that guide you through installing:
 ### To Do
 
 - Prompt to set hostname
-- Pormpt: bash or zsh as default?
+- Prompt: bash or zsh as default?
 - Prompt to replace default `~/.bash_profile` and `~/.zshrc` files
 - Prompt to setup a static IP
 - Prompt for git username/email instead of assuming
