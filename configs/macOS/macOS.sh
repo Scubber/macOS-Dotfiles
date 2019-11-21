@@ -79,7 +79,7 @@ defaults write com.apple.dock static-only -bool true
 # --
 
 # wallpaper - copy from repo to ~/Pictures
-cp ./wallpaper.jpg ~/Pictures/wallpaper.jpg
+cp ./configs/macOS/wallpaper.jpg ~/Pictures/wallpaper.jpg
 
 # wallpaper - set it
 osascript -e 'tell application "Finder" to set desktop picture to POSIX file "~/Pictures/wallpaper.jpg"'
