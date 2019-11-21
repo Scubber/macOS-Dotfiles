@@ -21,8 +21,7 @@ Provides prompts and menus that guide you through installing:
 - My macOS `System Preferences`
 - My macOS app settings
 - [Xcode](https://developer.apple.com/library/archive/technotes/tn2339/_index.html) cli tools
-- [Homebrew](https://brew.sh/) package manager
-- My preferred macOS [cli & gui apps](https://github.com/samkasman/macOS-Dotfiles/blob/master/configs/brew/Brewfile)
+- [Homebrew](https://brew.sh/) package manager and my preferred macOS [cli & gui apps](https://github.com/samkasman/macOS-Dotfiles/blob/master/configs/brew/Brewfile)
 - [zsh](http://zsh.sourceforge.net/) as default shell with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and [PowerLevel10k](https://github.com/romkatv/powerlevel10k).
 - Sets my `git` username and email address
 - Installs my preferred [Ableton Live](https://www.ableton.com/en/live/) theme
