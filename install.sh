@@ -8,13 +8,14 @@ printf "\e[96m"
 echo "\\n--"
 echo "Greetings, traveler!"
 echo "--"
-echo "Welcome to @samkasman's base macOS workstation configuration."
+echo "Welcome to @samkasman's macOS workstation configuration tool."
 echo "--"
 echo "https://samkasman.com"
 echo "--"
-echo "WARNING: Be sure you know exactly what this is going to do. You might lose some important settings."
+echo "WARNING: Be sure you know what you're doing. You might lose some important settings."
 echo "--\\n"
 printf "\e[0m"
+
 
 # Main stuff
 # --
@@ -25,27 +26,29 @@ chmod -R +x ./configs
 
 echo "\\nInstall...\\n"
 
-# script install menu
+
+# Menu - Script Selection
+# --
 PS3=""
 options=("Everything" "System Preferences" "Applications" "CLI Tools" "Ableton Live" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
         "Everything")
-            echo "\\n$opt, comin' right up!"
+            echo "\\n$opt, comin' right up!\\n"
 
 			sudo -v
 
 			./configs/macOS/macOS.sh
 			./configs/brew/brew.sh
 			./configs/zsh/zsh.sh
-			# backup/replace shell scripts here
+			# backup/replace shell profiles here
 			./configs/git/git.sh
 			./configs/ableton/ableton.sh
 
             break;;
         "System Preferences")
-            echo "\\n$opt, comin' right up!"
+            echo "\\n$opt, comin' right up!\\n"
 
 			sudo -v
 
@@ -53,7 +56,7 @@ do
 
             break;;
         "Applications")
-            echo "\\n$opt, comin' right up!"
+            echo "\\n$opt, comin' right up!\\n"
 
 			sudo -v
 
@@ -61,18 +64,17 @@ do
 
             break;;
 		"CLI Tools")
-            echo "\\n$opt, comin' right up!"
+            echo "\\n$opt, comin' right up!\\n"
 
 			sudo -v
 
 			./configs/zsh/zsh.sh
+			# backup/replace shell profiles here
 			./configs/git/git.sh
-
-			# backup/replace shell scripts here
 
             break;;
 		"Ableton Live")
-            echo "\\n$opt, comin' right up!"
+            echo "\\n$opt, comin' right up!\\n"
 
 			sudo -v
 
