@@ -1,9 +1,10 @@
-##
-## zsh
-##
+#
+# zsh
+#
 
 # Init Message
 # --
+
 echo ""
 printf "\e[96m"
 echo "--"
@@ -14,7 +15,8 @@ echo "--"
 echo ""
 printf "\e[0m"
 
-# zsh Settings
+
+# zsh Stuff
 # --
 
 # Clone Oh-My-Zsh zsh framework

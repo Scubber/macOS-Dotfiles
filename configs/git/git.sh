@@ -1,9 +1,10 @@
-##
-## git
-##
+#
+# git
+#
 
 # Init Message
 # --
+
 echo ""
 printf "\e[96m"
 echo "--"
@@ -13,6 +14,7 @@ echo ""
 echo "--"
 echo ""
 printf "\e[0m"
+
 
 # Git Settings
 # --
