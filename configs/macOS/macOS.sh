@@ -15,8 +15,34 @@ printf "\e[0m"
 # System Preferences
 # --
 
-# kill an open system preferences window
+# kill System Preferences window
 osascript -e 'tell application "System Preferences" to quit'
+
+# prompt to set hostname
+read -r -p "Set hostname? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		echo "\\nEnter hostname: "
+
+		read hostname
+
+		# set hostname
+		sudo scutil --set HostName $hostname
+
+		# set Bonjour hostname
+		sudo scutil --set LocalHostName $hostname
+
+		# set computer name
+		sudo scutil --set ComputerName $hostname
+
+        ;;
+    *)
+		# do nothing
+        ;;
+esac
+
+echo "\\n"
 
 # dark mode
 osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true'
