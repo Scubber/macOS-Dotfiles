@@ -18,7 +18,7 @@ printf "\e[0m"
 # Install Homebrew
 # --
 
-if brew ls --versions myformula > /dev/null; then
+if [[ $(command -v brew) == "" ]]; then
 
 	# no brew, install it
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
