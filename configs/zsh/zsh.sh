@@ -17,6 +17,8 @@ printf "\e[0m"
 # zsh Stuff
 # --
 
+# prompt to replace ~/.zshrc
+
 # prompt to set default shell
 read -r -p "Set default shell to zsh? [y/N] " response
 case "$response" in
@@ -58,13 +60,13 @@ case "$response" in
 				;;
 			*)
 
-				echo "\\nMoving on...\\n"
+				# do nothing
 				;;
 		esac
 
         ;;
     *)
 
-		echo "\\nMoving on...\\n"
-        ;;
+	# do nothing
+	;;
 esac

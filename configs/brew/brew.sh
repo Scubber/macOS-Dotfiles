@@ -19,11 +19,15 @@ printf "\e[0m"
 if [[ $(command -v brew) == "" ]]; then
 
 	# no brew, install it
+	echo "Installing Homebrew.\\n"
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 else
 
-	# brew is installed - check for brew and formulae updates
+	# brew is installed
+	echo "Homebrew detected. Skipping install.\\n"
+
+	# check for brew and formulae updates
 	brew update
 	brew upgrade
 
