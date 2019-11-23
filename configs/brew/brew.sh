@@ -2,7 +2,7 @@
 # Homebrew
 #
 
-# Init Message
+# init
 # --
 printf "\e[96m"
 echo "--"
@@ -12,9 +12,10 @@ echo ""
 printf "\e[0m"
 
 
-# Install Homebrew
+# brew Stuff
 # --
 
+# check if brew is installed
 if [[ $(command -v brew) == "" ]]; then
 
 	# no brew, install it
@@ -26,14 +27,42 @@ else
 	# brew is installed
 	echo "Homebrew detected. Skipping install.\\n"
 
-	# check for brew and formulae updates
-	brew update
-	brew upgrade
+	# prompt to check for brew and formulae updates
+	read -r -p "Check for application updates? [y/N] " response
+	case "$response" in
+		[yY][eE][sS]|[yY])
+
+			# yes - update brew and formulae
+			brew update
+
+			# update brew apps
+			brew upgrade
+			;;
+		*)
+
+			# no - do nothing
+			;;
+	esac
+
+	echo "\\n"
 
 fi
 
-# install apps via configs/Brewfile
-cd configs/brew/ && brew bundle && cd ../../
+# prompt to install all apps via Brewfile
+read -r -p "Install all apps via Brewfile? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
 
-# remove old versions from the cellar
-brew cleanup
+		# yes - install apps via Brewfile
+		cd configs/brew/ && brew bundle && cd ../../
+
+		# remove old versions from the cellar
+		brew cleanup
+        ;;
+    *)
+
+		# no - do nothing
+        ;;
+esac
+
+echo "\\n"
