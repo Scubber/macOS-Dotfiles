@@ -4,19 +4,17 @@
 
 In computing, dotfiles are files or directories that begin with a `.`
 
-Filesystem utilities do not display these by default when showing a directory listing. They are commonly used for storing user preferences or preserving the state of a utility.
+They are commonly used for storing user preferences or preserving the state of a utility.
 
 ### Installation
 
-The `install.sh` script will deploy my base macOS workstation configuration including important OS and application settings and resources. This is used to automate both the process of setting up and maintaining one or more workstations.
+**Warning**: Potentially dangerous. Run at your own risk.
 
-**Warning**: You're probably best off using this as **✧･ﾟ:_inspiration_:･ﾟ✧** for your own setup. Run at your own risk.
-
-To deploy, run: `chmod +x install.sh && ./install.sh`
+run: `chmod +x install.sh && ./install.sh`
 
 ### What does it do?
 
-Provides prompts and menus that guide you through setting up:
+Provides prompts and menus that guide you through the automated setup of:
 
 - Your hostname
 - My preferred macOS `System Preferences`
