@@ -7,9 +7,7 @@
 echo ""
 printf "\e[96m"
 echo "--"
-echo ""
 echo "Starting Homebrew script"
-echo ""
 echo "--"
 echo ""
 printf "\e[0m"
@@ -25,11 +23,9 @@ if [[ $(command -v brew) == "" ]]; then
 
 else
 
-	# brew is installed -- check for updates
+	# brew is installed - check for brew and formulae updates
 	brew update
-
-	# upgrade any existing formulae
-	# brew upgrade
+	brew upgrade
 
 fi
 
