@@ -14,7 +14,7 @@ run: `chmod +x install.sh && ./install.sh`
 
 Provides prompts and menus that guide you through the automated setup of:
 
-- Your hostname
+- Your hostname (who you appear as on networks)
 - My preferred macOS `System Preferences`
 - My preferred macOS app settings
 - [Xcode](https://developer.apple.com/library/archive/technotes/tn2339/_index.html) cli tools
