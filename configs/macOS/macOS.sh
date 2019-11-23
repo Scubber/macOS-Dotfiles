@@ -44,6 +44,22 @@ esac
 
 echo "\\n"
 
+# prompt to generate ssh key
+read -r -p "Generate an SSH key? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# yes - run ssh-keygen
+		ssh-keygen
+        ;;
+    *)
+
+		# no - do nothing
+        ;;
+esac
+
+echo "\\n"
+
 # dark mode
 osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true'
 
