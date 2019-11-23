@@ -30,7 +30,7 @@ echo "\\nDeploy...\\n"
 # Menu - Script Selection
 # --
 PS3=""
-options=("Everything" "System Preferences" "Applications" "CLI Config" "Ableton Live" "Quit")
+options=("Everything" "System Preferences" "Applications" "CLI Config" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
