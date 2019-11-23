@@ -4,7 +4,6 @@
 
 # Init Message
 # --
-echo ""
 printf "\e[96m"
 echo "--"
 echo "Starting Ableton script"

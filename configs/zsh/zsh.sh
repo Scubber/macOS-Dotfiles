@@ -4,8 +4,6 @@
 
 # Init Message
 # --
-
-echo ""
 printf "\e[96m"
 echo "--"
 echo "Starting zsh script"
@@ -26,15 +24,14 @@ case "$response" in
 
 		# Change default shell to zsh
 		sudo chsh -s /usr/local/bin/zsh
-		echo "\\n"
-
         ;;
     *)
 
-		echo "\\nbash it is.\\n"
-
+		echo "\\nbash it is."
         ;;
 esac
+
+echo "\\n"
 
 # prompt to install Oh-My-Zsh
 read -r -p "Install Oh-My-Zsh framework? [y/N] " response
@@ -70,3 +67,5 @@ case "$response" in
 	# do nothing
 	;;
 esac
+
+echo "\\n"
