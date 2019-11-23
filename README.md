@@ -14,8 +14,8 @@ run: `chmod +x install.sh && ./install.sh`
 
 Provides prompts and menus that guide you through the automated setup of:
 
-- Your `hostname` (who you appear as on networks)
-- Your `ssh` key (how you authenticate)
+- Your `hostname` -- who you appear to be
+- Your `ssh` key -- how you authenticate
 - My preferred macOS `System Preferences`
 - My preferred macOS app settings
 - [Xcode](https://developer.apple.com/library/archive/technotes/tn2339/_index.html) cli tools
