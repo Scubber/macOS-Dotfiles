@@ -26,8 +26,6 @@ case "$response" in
 		sudo chsh -s /usr/local/bin/zsh
         ;;
     *)
-
-		echo "\\nbash it is."
         ;;
 esac
 
