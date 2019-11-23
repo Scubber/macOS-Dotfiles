@@ -2,8 +2,7 @@
 
 ### What are dotfiles?
 
-In computing, dotfiles are files or directories that begin with a `.`
-They are commonly used for storing user preferences or preserving the state of a utility.
+In computing, dotfiles (files that begin with a `.`) are commonly used for storing user preferences or preserving the state of a utility.
 
 ### Installation
 
