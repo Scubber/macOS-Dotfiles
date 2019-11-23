@@ -23,7 +23,7 @@ Provides prompts and menus that guide you through the automated setup of:
 - My `~/.bash_profile`
 - [zsh](http://zsh.sourceforge.net/), [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), [PowerLevel10k](https://github.com/romkatv/powerlevel10k) and my `~/.zshrc` file
 - Your `git` username and email address
-- My preferred [Ableton Live](https://www.ableton.com/en/live/) theme
+- My preferred [Ableton Live](https://www.ableton.com/en/live/) dark theme
 
 ### To Do
 
