@@ -30,8 +30,7 @@ Provides prompts and menus that guide you through the automated setup of:
 - Add App Store apps via `mas-cli`
 - Prompt to setup a static IP
 - Prompt to mount NAS via IP address, always mount on boot
-- Add Oh-My-Zsh and Powerlevel10k to repo (just in case...)
-- Add option to install Oh-My-Zsh/Powerlevel10k from repo or online
+- Add option to install Oh-My-Zsh/Powerlevel10k from online or local
 - Automate iTerm2 theme like [this](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
 - Only copy iTerm2's `Dracula.itemcolors` if it's not already in place
 - Ubersicht - add custom widgets
