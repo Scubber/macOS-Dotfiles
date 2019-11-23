@@ -63,7 +63,7 @@ do
 			./configs/brew/brew.sh
 
             break;;
-		"Shell Config")
+		"CLI Config")
             echo "\\n$opt, comin' right up!\\n"
 
 			sudo -v
