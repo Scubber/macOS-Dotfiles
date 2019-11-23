@@ -21,13 +21,14 @@ Provides prompts and menus that guide you through the automated setup of:
 - My preferred macOS app settings
 - [Xcode](https://developer.apple.com/library/archive/technotes/tn2339/_index.html) cli tools
 - [Homebrew](https://brew.sh/) and my preferred macOS [tools and apps](https://github.com/samkasman/macOS-Dotfiles/blob/master/configs/brew/Brewfile)
+- My `bash` profile
 - [zsh](http://zsh.sourceforge.net/) with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and [PowerLevel10k](https://github.com/romkatv/powerlevel10k).
 - Your `git` username and email address
 - My preferred [Ableton Live](https://www.ableton.com/en/live/) theme
 
 ### To Do
 
-- Prompt to replace default `~/.bash_profile` and `~/.zshrc` files
+- Prompt to replace default `~/.zshrc` file
 - Prompt to setup a static IP
 - Prompt to generate an `ssh` key in default location
 - Prompt to mount NAS via IP address, always mount on boot
