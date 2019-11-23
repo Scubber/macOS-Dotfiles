@@ -2,7 +2,7 @@
 # macOS
 #
 
-# Init Message
+# Init
 # --
 printf "\e[96m"
 echo "--"
@@ -11,11 +11,12 @@ echo "--"
 echo ""
 printf "\e[0m"
 
-# System Preferences
-# --
-
 # kill System Preferences window
 osascript -e 'tell application "System Preferences" to quit'
+
+
+# System Preferences
+# --
 
 # prompt to set hostname
 read -r -p "Set hostname? [y/N] " response
@@ -190,42 +191,6 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
-
-# Sublime Text
-# --
-
-# Install package manager
-
-# Install Seti_UI theme
-
-# Install Sublime Text settings
-# cp -r configs/sublime-text/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
-
-# Enable 'subl' command
-
-
-# Terminal
-# --
-
-# Enable Secure Keyboard Entry in Terminal.app
-# See: https://security.stackexchange.com/a/47786/8918
-defaults write com.apple.terminal SecureKeyboardEntry -bool true
-
-# Install the Dracula theme for iTerm2
-open "../iterm2/Dracula.itermcolors"
-
-# Don’t display the annoying prompt when quitting iTerm2
-defaults write com.googlecode.iterm2 PromptOnQuit -bool false
-
-
-# VSCode
-# --
-
-# Install Settings Sync extension to pull everything from https://gist.github.com
-
-# Enable 'code' command
-
-
 # Restart affected applications
 # --
 
@@ -238,13 +203,23 @@ for app in "Activity Monitor" \
 done
 
 
+# Terminal
+# --
+
+# Enable Secure Keyboard Entry in Terminal.app
+# See: https://security.stackexchange.com/a/47786/8918
+defaults write com.apple.terminal SecureKeyboardEntry -bool true
+
+
 # Xcode
 # --
 
 if xcode-select --install 2>&1 | grep installed; then
 	# Xcode CLI tools are installed
-	echo "Moving on."
+	echo "\\nXcode CLI tools detected."
 else
   	# Xcode CLI tools are not installed, do it!
 	xcode-select —-install
 fi
+
+echo "\\n"

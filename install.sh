@@ -39,12 +39,20 @@ do
 
 			sudo -v
 
+			# System Preferences
 			./configs/macOS/macOS.sh
+
+			# Applications + Config
 			./configs/brew/brew.sh
+			./configs/ableton/ableton.sh
+			./configs/iterm2/iterm2.sh
+			./configs/sublime-text/sublime-text.sh
+			./configs/vscode/vscode.sh
+
+			# CLI Config
 			./configs/bash/bash.sh
 			./configs/zsh/zsh.sh
 			./configs/git/git.sh
-			./configs/ableton/ableton.sh
 
             break;;
         "System Preferences")
@@ -61,6 +69,10 @@ do
 			sudo -v
 
 			./configs/brew/brew.sh
+			./configs/ableton/ableton.sh
+			./configs/iterm2/iterm2.sh
+			./configs/sublime-text/sublime-text.sh
+			./configs/vscode/vscode.sh
 
             break;;
 		"CLI Config")
@@ -71,14 +83,6 @@ do
 			./configs/bash/bash.sh
 			./configs/zsh/zsh.sh
 			./configs/git/git.sh
-
-            break;;
-		"Ableton Live")
-            echo "\\n$opt, comin' right up!\\n"
-
-			sudo -v
-
-			./configs/ableton/ableton.sh
 
             break;;
         "Quit")
