@@ -24,14 +24,13 @@ Provides prompts and menus that guide you through setting up:
 - [Xcode](https://developer.apple.com/library/archive/technotes/tn2339/_index.html) cli tools
 - [Homebrew](https://brew.sh/) and my preferred macOS [tools and apps](https://github.com/samkasman/macOS-Dotfiles/blob/master/configs/brew/Brewfile)
 - [zsh](http://zsh.sourceforge.net/) with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and [PowerLevel10k](https://github.com/romkatv/powerlevel10k).
-- `git` username and email address
+- Your `git` username and email address
 - My preferred [Ableton Live](https://www.ableton.com/en/live/) theme
 
 ### To Do
 
 - Prompt to replace default `~/.bash_profile` and `~/.zshrc` files
 - Prompt to setup a static IP
-- Prompt for git username/email instead of assuming
 - Prompt to generate an `ssh` key in default location
 - Prompt to mount NAS via IP address, always mount on boot
 - Automate iTerm2 theme like [this](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)

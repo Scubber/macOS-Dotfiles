@@ -17,6 +17,34 @@ printf "\e[0m"
 # Git Settings
 # --
 
-# set git username and email address
-git config --global user.name "Sam Kasman"
-git config --global user.email sk@samkasman.com
+# prompt to configure git
+read -r -p "Configure git? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		echo "\\nEnter name:"
+
+		read name
+
+		# set git name
+		git config --global user.name "$name" --replace-all
+
+		echo "\\nEnter e-mail address:"
+
+		read email
+
+		# set git name
+		git config --global user.email $email --replace-all
+
+		# confirm git settings
+		# echo "Git settings:"
+		# git config user.name
+		# git config user.email
+
+        ;;
+    *)
+		# do nothing
+        ;;
+esac
+
+echo "\\n"
