@@ -14,22 +14,27 @@ echo "--"
 echo ""
 printf "\e[0m"
 
+
 # Install Homebrew
 # --
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Make sure we're on the most recent version
-# --
-brew update
+if brew ls --versions myformula > /dev/null; then
 
-# Upgrade any existing formulae
-# --
-brew upgrade
+	# no brew, install it
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Install apps via configs/Brewfile
-# --
+else
+
+	# brew is installed -- check for updates
+	brew update
+
+	# upgrade any existing formulae
+	# brew upgrade
+
+fi
+
+# install apps via configs/Brewfile
 cd configs/brew/ && brew bundle && cd ../../
 
-# Remove old versions from the cellar
-# --
+# remove old versions from the cellar
 brew cleanup
