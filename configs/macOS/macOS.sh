@@ -216,7 +216,7 @@ defaults write com.apple.terminal SecureKeyboardEntry -bool true
 
 if xcode-select --install 2>&1 | grep installed; then
 	# Xcode CLI tools are installed
-	echo "\\nXcode CLI tools detected."
+	echo "\\nXcode CLI tools detected.\\nSkipping install."
 else
   	# Xcode CLI tools are not installed, do it!
 	xcode-select —-install

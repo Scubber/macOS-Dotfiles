@@ -15,23 +15,8 @@ printf "\e[0m"
 # zsh Stuff
 # --
 
-# prompt to replace ~/.zshrc
-
-# prompt to set default shell
-read -r -p "Set default shell to zsh? [y/N] " response
-case "$response" in
-    [yY][eE][sS]|[yY])
-
-		# Change default shell to zsh
-		sudo chsh -s /usr/local/bin/zsh
-        ;;
-    *)
-        ;;
-esac
-
-echo "\\n"
-
 # prompt to install Oh-My-Zsh
+
 read -r -p "Install Oh-My-Zsh framework? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
@@ -64,6 +49,45 @@ case "$response" in
 
 	# do nothing
 	;;
+esac
+
+echo "\\n"
+
+
+# prompt to replace existing ~/.zshrc
+
+read -r -p "Backup and replace existing ~/.zshrc? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# backup existing ~/.zshrc as ~/.zshrc.backup
+		mv ~/.zshrc ~/.zshrc.backup
+		echo "\\nBacked up existing ~/.zshrc as ~/.zshrc.backup"
+
+		# copy repo's configs/zsh/.zshrc to ~/.zshrc
+		cp configs/zsh/.zshrc ~/.zshrc
+		echo "\\nCopied repository version to ~/.zshrc"
+        ;;
+    *)
+
+		# do nothing
+        ;;
+esac
+
+echo "\\n"
+
+
+# prompt to set shell default to zsh
+
+read -r -p "Set default shell to zsh? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# Change default shell to zsh
+		sudo chsh -s /usr/local/bin/zsh
+        ;;
+    *)
+        ;;
 esac
 
 echo "\\n"
