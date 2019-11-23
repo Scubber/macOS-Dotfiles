@@ -24,13 +24,13 @@ printf "\e[0m"
 echo "\\nPreparing for launch.\\n"
 chmod -R +x ./configs
 
-echo "\\nInstall...\\n"
+echo "\\nDeploy...\\n"
 
 
 # Menu - Script Selection
 # --
 PS3=""
-options=("Everything" "System Preferences" "Applications" "CLI Tools" "Ableton Live" "Quit")
+options=("Everything" "System Preferences" "Applications" "CLI Config" "Ableton Live" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -41,8 +41,8 @@ do
 
 			./configs/macOS/macOS.sh
 			./configs/brew/brew.sh
+			./configs/bash/bash.sh
 			./configs/zsh/zsh.sh
-			# backup/replace shell profiles here
 			./configs/git/git.sh
 			./configs/ableton/ableton.sh
 
@@ -63,13 +63,13 @@ do
 			./configs/brew/brew.sh
 
             break;;
-		"CLI Tools")
+		"Shell Config")
             echo "\\n$opt, comin' right up!\\n"
 
 			sudo -v
 
+			./configs/bash/bash.sh
 			./configs/zsh/zsh.sh
-			# backup/replace shell profiles here
 			./configs/git/git.sh
 
             break;;
@@ -93,7 +93,7 @@ done
 echo ""
 printf "\e[96m"
 echo "--"
-echo "Boom! All done."
+echo "Mission accomplished."
 echo "--"
 echo ""
 printf "\e[0m"
