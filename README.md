@@ -29,7 +29,6 @@ Provides prompts and menus that guide you through setting up:
 
 ### To Do
 
-- Prompt to set hostname
 - Prompt to replace default `~/.bash_profile` and `~/.zshrc` files
 - Prompt to setup a static IP
 - Prompt for git username/email instead of assuming
