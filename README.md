@@ -2,7 +2,7 @@
 
 ### What are dotfiles?
 
-In computing, dotfiles (files that begin with a `.`) are commonly used for storing user preferences or preserving the state of a utility.
+In computing, dotfiles (files that begin with a `.`) are commonly used for storing user preferences or preserving the state of a utility. The `install.sh` script will deploy all or parts of my base macOS workstation configuration.
 
 ### Installation
 
