@@ -28,7 +28,6 @@ Provides prompts and menus that guide you through the automated setup of:
 
 ### To Do
 
-- Prompt to replace default `~/.zshrc` file
 - Prompt to setup a static IP
 - Prompt to generate an `ssh` key in default location
 - Prompt to mount NAS via IP address, always mount on boot
