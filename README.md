@@ -28,6 +28,7 @@ Provides prompts and menus that guide you through the automated setup of:
 ### To Do
 
 - Add App Store apps via `mas-cli`
+- Add global npm packages (`gulp`, `grunt`, `browser-sync`, `resume-cli`)
 - Prompt to setup a static IP
 - Prompt to mount NAS via IP address, always mount on boot
 - Add option to install Oh-My-Zsh/Powerlevel10k from online or local
