@@ -1,4 +1,22 @@
+#                      /$$
+#                     | $$
+#  /$$$$$$$$  /$$$$$$$| $$$$$$$
+# |____ /$$/ /$$_____/| $$__  $$
+#    /$$$$/ |  $$$$$$ | $$  \ $$
+#   /$$__/   \____  $$| $$  | $$
+#  /$$$$$$$$ /$$$$$$$/| $$  | $$
+# |________/|_______/ |__/  |__/
+
+
+#
+# Reuse .bash_profile
+#
 source ~/.bash_profile
+
+
+#
+# zsh Config
+#
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
