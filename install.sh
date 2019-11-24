@@ -2,26 +2,29 @@
 # Let's Go!
 #
 
+WHITE='\033[1;37m'
+GRAY='\033[0;37m'
+BLUEL='\033[1;34m'
+BLUED='\033[0;34m'
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+
 # Welcome message
 # --
-printf "\e[96m"
+echo "\\nGreetings, traveler!"
 echo "\\n--"
-echo "Greetings, traveler!"
+echo "\\nWelcome to ${BLUED}@samkasman${WHITE}'s macOS workstation configuration tool."
+echo "${BLUED}https://samkasman.com${WHITE}\\n"
 echo "--"
-echo "Welcome to @samkasman's macOS workstation configuration tool."
-echo "--"
-echo "https://samkasman.com"
-echo "--"
-echo "WARNING: Be sure you know what you're doing. You might lose some important settings."
+echo "${RED}WARNING:${WHITE} Be sure you know what you're doing. You might lose some important settings."
 echo "--\\n"
-printf "\e[0m"
 
+echo "${GREEN}\\nPreparing for launch.${WHITE}\\n"
 
 # Main stuff
 # --
 
 # make scripts in configs/ executable
-echo "\\nPreparing for launch.\\n"
 chmod -R +x ./configs
 
 echo "\\nDeploy...\\n"
@@ -94,12 +97,8 @@ done
 
 # Success message
 # --
-echo ""
-printf "\e[96m"
+echo "${GREEN}"
 echo "--"
-echo ""
 echo "MISSION ACCOMPLISHED"
-echo ""
 echo "--"
 echo ""
-printf "\e[0m"
