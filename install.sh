@@ -47,6 +47,7 @@ do
 			./configs/macOS/macOS.sh
 
 			# Applications + Config
+			./configs/app-store/app-store.sh
 			./configs/brew/brew.sh
 			./configs/ableton/ableton.sh
 			./configs/iterm2/iterm2.sh
@@ -72,6 +73,7 @@ do
 
 			sudo -v
 
+			./configs/app-store/app-store.sh
 			./configs/brew/brew.sh
 			./configs/ableton/ableton.sh
 			./configs/iterm2/iterm2.sh
