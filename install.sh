@@ -11,15 +11,15 @@ RED='\033[0;31m'
 
 # Welcome message
 # --
-echo "\\nGreetings, traveler!"
 echo "\\n--"
-echo "\\nWelcome to ${BLUED}@samkasman${WHITE}'s macOS workstation configuration tool."
-echo "${BLUED}https://samkasman.com${WHITE}\\n"
+echo "Greetings, traveler!"
 echo "--"
-echo "${RED}WARNING:${WHITE} Be sure you know what you're doing. You might lose some important settings."
-echo "--\\n"
-
-echo "${GREEN}\\nPreparing for launch.${WHITE}\\n"
+echo "Welcome to ${BLUED}@samkasman${WHITE}'s macOS workstation configuration tool."
+echo "--"
+echo "${BLUED}https://samkasman.com${WHITE}"
+echo "--"
+echo "\\n${RED}WARNING:${WHITE} Be sure you know what you're doing. You might lose some important settings."
+echo "${GREEN}\\nPreparing for launch.${WHITE}"
 
 # Main stuff
 # --
@@ -27,11 +27,12 @@ echo "${GREEN}\\nPreparing for launch.${WHITE}\\n"
 # make scripts in configs/ executable
 chmod -R +x ./configs
 
-echo "\\nDeploy...\\n"
-
 
 # Menu - Script Selection
 # --
+
+echo "\\nDeploy...\\n"
+
 PS3=""
 options=("Everything" "System Preferences" "Applications" "CLI Config" "Quit")
 select opt in "${options[@]}"
