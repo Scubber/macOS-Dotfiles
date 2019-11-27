@@ -6,7 +6,7 @@
 # --
 printf "\e[96m"
 echo "--"
-echo "Starting zsh script"
+echo "zsh"
 echo "--"
 echo ""
 printf "\e[0m"

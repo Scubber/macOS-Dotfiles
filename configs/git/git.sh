@@ -6,7 +6,7 @@
 # --
 printf "\e[96m"
 echo "--"
-echo "Starting git script"
+echo "git"
 echo "--"
 echo ""
 printf "\e[0m"

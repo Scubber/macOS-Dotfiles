@@ -6,7 +6,7 @@
 # --
 printf "\e[96m"
 echo "--"
-echo "Starting VSCode script"
+echo "VSCode"
 echo "--"
 echo ""
 printf "\e[0m"

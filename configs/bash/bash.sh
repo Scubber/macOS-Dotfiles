@@ -7,7 +7,7 @@
 
 printf "\e[96m"
 echo "--"
-echo "Starting bash script"
+echo "bash"
 echo "--"
 echo ""
 printf "\e[0m"

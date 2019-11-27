@@ -6,7 +6,7 @@
 # --
 printf "\e[96m"
 echo "--"
-echo "Starting macOS script"
+echo "macOS"
 echo "--"
 echo ""
 printf "\e[0m"

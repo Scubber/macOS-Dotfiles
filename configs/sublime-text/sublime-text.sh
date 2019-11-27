@@ -6,7 +6,7 @@
 # --
 printf "\e[96m"
 echo "--"
-echo "Starting Sublime Text script"
+echo "Sublime Text"
 echo "--"
 echo ""
 printf "\e[0m"

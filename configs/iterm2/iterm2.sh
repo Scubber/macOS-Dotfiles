@@ -6,7 +6,7 @@
 # --
 printf "\e[96m"
 echo "--"
-echo "Starting iTerm2 script"
+echo "iTerm2"
 echo "--"
 echo ""
 printf "\e[0m"

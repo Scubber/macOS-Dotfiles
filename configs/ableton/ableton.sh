@@ -6,7 +6,7 @@
 # --
 printf "\e[96m"
 echo "--"
-echo "Starting Ableton script"
+echo "Ableton"
 echo "--"
 echo ""
 printf "\e[0m"

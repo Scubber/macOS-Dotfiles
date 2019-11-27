@@ -6,7 +6,7 @@
 # --
 printf "\e[96m"
 echo "--"
-echo "Starting Homebrew script"
+echo "brew"
 echo "--"
 echo ""
 printf "\e[0m"
